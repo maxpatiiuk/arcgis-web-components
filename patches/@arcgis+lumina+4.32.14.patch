@@ -1,0 +1,15 @@
+diff --git a/node_modules/@arcgis/lumina/dist/index.js b/node_modules/@arcgis/lumina/dist/index.js
+index 7fc20ef..eab47c3 100644
+--- a/node_modules/@arcgis/lumina/dist/index.js
++++ b/node_modules/@arcgis/lumina/dist/index.js
+@@ -219,10 +219,6 @@ var LitElement = class _LitElement extends OriginalLitElement {
+     const options = Class.shadowRootOptions;
+     const useLightDom = options === noShadowRoot;
+     const renderRoot = existingShadowRoot ?? (useLightDom ? this.el : this.el.attachShadow(options));
+-    Object.defineProperty(this, "shadowRoot", {
+-      // Create shadow root on the proxy instance, to make Lit render content there
+-      value: renderRoot
+-    });
+     if (existingShadowRoot) {
+       if (process.env.NODE_ENV === "production") {
+         OriginalLitElement.prototype.createRenderRoot.call(this);
