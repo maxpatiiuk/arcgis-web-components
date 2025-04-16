@@ -1,7 +1,7 @@
-diff --git a/node_modules/@arcgis/lumina/dist/index.js b/node_modules/@arcgis/lumina/dist/index.js
-index 7fc20ef..eab47c3 100644
---- a/node_modules/@arcgis/lumina/dist/index.js
-+++ b/node_modules/@arcgis/lumina/dist/index.js
+diff --git a/dist/index.js b/dist/index.js
+index 7fc20efc331fe7362e3eca10bf99cac3271e7e79..eab47c38a271c27e14047167407e05d113f9164b 100644
+--- a/dist/index.js
++++ b/dist/index.js
 @@ -219,10 +219,6 @@ var LitElement = class _LitElement extends OriginalLitElement {
      const options = Class.shadowRootOptions;
      const useLightDom = options === noShadowRoot;
